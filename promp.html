@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=auto, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function convertir(valor) {
+            let respuesta = "";
+            switch (valor) {
+                case 0:
+                    respuesta = "Cero"; break;
+                case 1:
+                    respuesta = "Uno"; break;
+                case 2:
+                    respuesta = "Dos"; break;
+                case 3:
+                    respuesta = "Tres"; break;
+                case 4:
+                    respuesta = "Cuatro"; break;
+                case 5:
+                    respuesta = "Cinco"; break;
+                case 6:
+                    respuesta = "Seis"; break;
+                case 7:
+                    respuesta = "Siete"; break;
+                case 8:
+                    respuesta = "Ocho"; break;
+                case 9:
+                    respuesta = "Nueve";break;
+            }
+            return respuesta;
+
+        }
+        let Promedio = 4.99999582;
+        let cadena = Promedio.toString();
+        let entero = parseInt(cadena.substring(0, 1));
+        let decimal = parseInt(cadena.substring(2, 3));
+
+        document.write("Parte entera " + entero);
+        document.write("Parte decimal " + decimal)
+
+        document.write("Representacion en palabras <br> <br>")
+        document.write(convertir(entero) + " punto " + convertir(decimal));
+    </script>
+</body>
+
+</html>
